@@ -22,7 +22,7 @@ public class LoginController {
 	@RequestMapping(params="method=toWelcomePage" , method = RequestMethod.GET)
 	public String toWelcomePage(HttpServletRequest request,Model model){
 		int id = Integer.parseInt(request.getParameter("id"));
-		
+		System.out.println("进入toWelcomePage页面了！");
 		return "";
 	}
 

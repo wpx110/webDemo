@@ -168,12 +168,12 @@
 
 <!-- 导入相对路径文件 -->
 <c:catch var="error08">
-	<c:import url="tt.txt" charEncoding="gbk"></c:import>
+	<c:import url="/jspdemo.txt" charEncoding="gbk"></c:import>
 </c:catch>
 <c:out value="${error08}"></c:out><br>
 <!-- var及scope属性的用法 -->
 <c:catch var="error07">
-	<c:import url="tt.txt" var="tt" scope="session" charEncoding="gbk"></c:import>
+	<c:import url="/jspdemo.txt" var="tt" scope="session" charEncoding="gbk"></c:import>
 </c:catch>
 <c:out value="${error07}"></c:out><br>
 <c:out value="import标签存储的tt字符串变量值为：${sessionScope.tt}"></c:out><br>
@@ -184,7 +184,7 @@
 <c:out value="${error06}"></c:out><br>
 
 <!-- varReader属性的用法 -->
-<c:import url="tt.txt" varReader="tt" charEncoding="gbk">
+<c:import url="/jspdemo.txt" varReader="tt" charEncoding="gbk">
 <c:set var="strTT" value="${tt}" scope="session"></c:set>
 <%
 	Reader r = (Reader)session.getAttribute("strTT");

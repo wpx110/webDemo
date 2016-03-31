@@ -11,10 +11,10 @@
 <!-- 使用out标签输出常量 -->
 <c:out value="This is our first JSTL demo"></c:out><br>
 <c:out value="${username}"></c:out>
-<c:out value="${1+2}"></c:out>
-<!-- <%String username = "zhangsan"; request.setAttribute("username", username);%>
+<c:out value="${1+2}"></c:out><br>
+<%String username = "zhangsan"; request.setAttribute("username", username);%>
 <c:out value="${empty username}"></c:out>
- -->
+
 <form action="firstDemo2.jsp" method="post">
 	<input type="text" name="role">
 	<input type="submit" name="登录">

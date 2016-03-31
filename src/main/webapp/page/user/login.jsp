@@ -8,7 +8,7 @@
 </head>
 <body>
 欢迎进入用户登陆页面
-	<form action="user.do?method=toWelcomePage">
+	<form action="user.do?method=toWelcomePage" method="get">
 	id<input type="text" name="id"/><br/>
 	name<input type="text" name="name"/>
 	<input type="submit" value="提交"/>
