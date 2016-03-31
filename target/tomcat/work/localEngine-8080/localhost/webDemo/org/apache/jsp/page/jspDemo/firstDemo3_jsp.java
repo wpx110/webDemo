@@ -272,7 +272,7 @@ session.setAttribute("name", "Jessica");
       out.write("\r\n");
       out.write("\r\n");
       out.write("<!-- if标签的用法 -->\r\n");
-      out.write("<form action=\"firstDemo.jsp\" method=\"post\">\r\n");
+      out.write("<form action=\"firstDemo3.jsp\" method=\"post\">\r\n");
       out.write("\t<input type=\"text\" name=\"score\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.score}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"/>\r\n");

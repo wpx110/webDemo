@@ -15,7 +15,7 @@
 <!-- <%String username = "zhangsan"; request.setAttribute("username", username);%>
 <c:out value="${empty username}"></c:out>
  -->
-<form action="firstDemo.jsp" method="post">
+<form action="firstDemo2.jsp" method="post">
 	<input type="text" name="role">
 	<input type="submit" name="登录">
 </form>

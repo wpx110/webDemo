@@ -65,7 +65,7 @@
 
 
 <!-- if标签的用法 -->
-<form action="firstDemo.jsp" method="post">
+<form action="firstDemo3.jsp" method="post">
 	<input type="text" name="score" value="${param.score}"/>
 	<input type="submit"/>
 </form>
