@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<script src="<%=request.getContextPath()%>/js/back/list.js"></script>
 	</head>
 	<body style="background: #e1e9eb;">
-		<form action="<%=request.getContextPath()%>List.action" id="mainForm" method="post">
+		<form action="<%=request.getContextPath()%>/List.do" id="mainForm" method="post">
 			<input type="hidden" name="currentPage" id="currentPage" value="${page.currentPage}"/>
 			
 			<div class="right">
@@ -54,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<td>${message.description}</td>
 										<td>
 											<a href="#">修改</a>&nbsp;&nbsp;&nbsp;
-											<a href="${basePath}DeleteOneServlet.action?id=${message.id}">删除</a>
+											<a href="DeleteOneServlet.action?id=${message.id}">删除</a>
 										</td>
 									</tr>
 								</c:forEach>
